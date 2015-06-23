@@ -1,5 +1,7 @@
 compile:
-	g++ -o libcommunity libcommunity.cpp
+	g++ -c libCommunity.cpp libCommunityTest.cpp
 
 checkstyle:
 		python ../cpplint/cpplint.py *.cpp
+
+test:

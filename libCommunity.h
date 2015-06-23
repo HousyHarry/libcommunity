@@ -1,4 +1,4 @@
-// Copyright 2016, Harry <daniel.h.peter@gmail.com>
+// Copyright 2015, Harry <daniel.h.peter@gmail.com>
 
 // This file is part of libcommunity.
 //
@@ -14,3 +14,8 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with libcommunity.  If not, see <http://www.gnu.org/licenses/>.
+
+//_______________________________________________________________________
+void createMember(name name, int age, sex sex, date birthday)
+void giveTask(member member, task task)
+void writeMemberToList(member* member, list* list)
