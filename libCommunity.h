@@ -15,7 +15,16 @@
 // You should have received a copy of the GNU General Public License
 // along with libcommunity.  If not, see <http://www.gnu.org/licenses/>.
 
-//_______________________________________________________________________
-void createMember(name name, int age, sex sex, date birthday)
-void giveTask(member member, task task)
-void writeMemberToList(member* member, list* list)
+#ifndef LIBCOMMUNITY_H_
+#define LIBCOMMUNITY_H_
+
+// Creates a new Member (Not yet implemented).
+void createMember(name name, int age, sex sex, date birthday);
+
+// Give a Task to a Member (Not yet implemented).
+void giveTask(member member, task task);
+
+// Write a members Name in a list (Not yet implemented).
+void writeMemberToList(member* member, list* list);
+
+#endif  // LIBCOMMUNITY_H_

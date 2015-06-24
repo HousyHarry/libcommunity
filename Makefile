@@ -1,7 +1,25 @@
-compile:
-	g++ -c libCommunity.cpp libCommunityTest.cpp
+CXX = g++
+all: compile test checkstyle
+
+compile: % %Test
+
+%: %.o
+	$(CXX) -o $@ $^
+
+%Test: %Test.o
+	$(CXX) -o %$@ $^
+
+%.o: %.cpp
+	$(CXX) -c $^ 
+
+test: libCommunityTest
+	./libCommunityTest
 
 checkstyle:
-		python ../cpplint/cpplint.py *.cpp
+		python ../cpplint/cpplint.py *.cpp *.h
 
-test:
+clean:
+	rm -f *.o
+	rm -f libCommunityTest
+	rm -f libCommunity
+
